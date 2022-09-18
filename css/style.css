@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+}
+
+.display{
+    height: 100px;
+    width: 100%;
+    background-color: #04021a;
+    color: white;
+    font-size: 50px;
+    padding: 15px;
+    text-align: right;
+}
+
+.buttons{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.buttons .expretions{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.buttons button{
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #04021a;
+    color: #d8d8d8;
+}
+
+.buttons .nums{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons .nums .unms{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+#equal{
+    height: 100%;
+    border-radius: 2px;
+    margin-left: 10px;
+}
