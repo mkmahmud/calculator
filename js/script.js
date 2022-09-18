@@ -3,7 +3,7 @@ const display = document.querySelector('.display');
 const buttons = document.getElementById('buttons');
 
 // expresstions
-const expreetions = ['+', '-', '÷', '×','='];
+const expreetions = ['+', '-', '÷', '×','=', 'C'];
 
 // var Init
 let firstval ; 
@@ -24,6 +24,10 @@ buttons.addEventListener('click',(e)=>{
             setResult()
         }
     }
+
+    if(e.target.value === 'C'){
+        window.location.reload();
+    }
 })
 
 const setResult = () => {
@@ -35,5 +39,7 @@ const setResult = () => {
     };
     display.innerText = operators[expretion](parseFloat(firstval), parseFloat(secondVal));
 }
+
+
 
 
